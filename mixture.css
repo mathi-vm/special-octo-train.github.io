@@ -1,0 +1,245 @@
+*{
+  
+  padding: 0;
+  margin:0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  
+ 
+  color: rgb(237, 228, 228);
+  /* background-color: rgb(138, 138, 230) */
+
+}
+.header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(moon.png);
+  background-position: center;
+  background-size: cover;
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 45px;
+  padding-left: 8%;
+  padding-right: 8%;
+  position: fixed;
+}
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 25px;
+ font-weight: bold;
+}
+nav ul li a:hover {
+  color:rgb(231, 168, 86);
+transition: 0.5s;
+}
+  
+.content {
+  position: absolute;
+  top: 40%;
+  left: 20%;
+ 
+
+}
+
+h1{
+  color: rgb(188, 234, 219);
+}
+.about{
+  background-image: url(moon.png);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  padding: 100px 0px;
+}
+.main{
+  width: 1000px;
+  display: flex;
+  margin:0 auto;
+  align-items: center;
+  justify-content: space-around;
+}
+.about-text h2{
+  font-size: 45px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+.about-text h4{
+  font-size: 35px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+  padding-left: 20px;
+}
+.about-text p{
+  color: rgb(180, 201, 201);
+  letter-spacing: 1px;
+  line-height: 20px;
+  font-size: 18px;
+  margin-bottom: 40px;
+  padding-left: 20px;
+}
+button{
+  background-color: rgb(155, 7, 223);
+  color: rgb(193, 215, 236);
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 13px 15px;
+  border-radius: 20px;
+  margin-left: 30px;
+  
+
+}
+.skills{
+  background-image: url(moon.png);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  height: 70vh;
+  width: 100%;
+  display:grid;
+  place-items: center;
+  position: relative;
+  margin: auto;
+}
+
+.skills h1{
+  color: rgb(244, 244, 244);
+}
+.container{
+  display: flex;
+gap: 60px;
+animation:scroll 40S linear infinite;
+}
+.card{
+  border-radius: 30px;
+  min-height: 100px;
+  min-width: 300px;
+   align-items: center;
+  justify-content: center; 
+  display: flex;
+
+}
+ .card:nth-child(odd){
+  background: linear-gradient(-229deg, rgb(193, 13, 193), rgb(236, 166, 36));
+}
+.card:nth-child(even){
+  background: linear-gradient(-229deg, rgb(200, 146, 248), rgb(241, 195, 108) );
+   
+}  
+@keyframes scroll{
+  0%{ 
+    transform: translateX(0);
+  }
+
+100%{
+  transform: translateX(calc(-250px*5));
+}
+}
+.box{
+  height: 80vh;
+  background-image: url(moon.png);
+  background-position: center;
+  background-size: cover;
+  
+}
+
+.testimonials{
+  display: flex;
+  justify-content: center;
+  min-height: 400px;
+  align-items: center;
+}
+.box h1{
+  color: rgb(252, 251, 247);
+  text-align: center;
+  padding-bottom: 20px;
+}
+.test{
+  height: 260px;
+  width: 330px;
+  padding: 20px 30px;
+  background-color: rgb(232, 95, 123);
+  margin: 15px;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+  
+.box p{
+  line-height: 16px;
+  margin-bottom: 20px;
+  
+}
+
+.contact {
+color: rgb(114, 6, 73);
+background-image: url(moon.png);
+background-position: center;
+background-size: cover;
+height: 70vh;
+width: 100%;
+}
+.contact-box{
+  display: flex;
+  background: rgb(223, 159, 159);
+}
+.contact-left{
+  flex-basis: 60%;
+  padding: 40px 60px;
+  color: rgb(76, 76, 165);
+}
+.contact-right{
+  flex-basis: 40%;
+  padding: 60px;
+  background-color: blueviolet;
+}
+.contact h1{
+  margin-bottom: 10px;
+  text-align: center;
+
+}
+.contact-left input{
+  color: rgb(76, 76, 165);
+}
+.input-row{
+  display: flex;
+  justify-content: space-between;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+.input-row .input-group{
+  flex-basis: 45%;
+}
+.input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid rgb(236, 197, 178);
+}
+textarea{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  border: 1px solid white;
+
+}
+label{
+  margin-bottom: 5px;
+  display: block;
+  color: blue;
+
+}
+tr td:first-child{
+  padding-right: 20px;
+  padding-bottom: 5px;
+}
+
+
